@@ -1,0 +1,22 @@
+name: Request to Join
+description: Request access to join the organization.
+title: "[Join Request] "
+labels: [join-request]
+body:
+  - type: input
+    id: github_username
+    attributes:
+      label: GitHub Username
+      description: Enter your GitHub handle (e.g. @username)
+      placeholder: "@username"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why do you want to join?
+      description: Briefly explain your interest in this organization.
+      placeholder: "I’d like to contribute to..."
+    validations:
+      required: true
